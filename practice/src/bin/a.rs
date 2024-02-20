@@ -1,3 +1,12 @@
+use proconio::input;
+
 fn main() {
-    unimplemented!();
+    input! {
+        a: u64,
+        b: u64,
+        c: u64,
+        s: String,
+    }
+
+    println!("{} {}", a + b + c, s)
 }
