@@ -1,3 +1,9 @@
+use proconio::input;
+
 fn main() {
-    unimplemented!();
+    input! {
+        n: u64,
+    }
+
+    println!("{}", n + 5);
 }
