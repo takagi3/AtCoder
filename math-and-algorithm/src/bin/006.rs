@@ -1,3 +1,9 @@
+use proconio::input;
+
 fn main() {
-    unimplemented!();
+    input! {
+        n: u64,
+    }
+
+    println!("{}", 2 * n + 3);
 }
