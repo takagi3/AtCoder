@@ -1,3 +1,17 @@
+use proconio::input;
+
 fn main() {
-    unimplemented!();
+    input! {
+        n: usize,
+        mut a: [u64; n],
+    }
+
+    a.sort();
+
+    println!("{}", a
+        .iter()
+        .map(std::string::ToString::to_string)
+        .collect::<Vec<_>>()
+        .join(" ")
+    );
 }
