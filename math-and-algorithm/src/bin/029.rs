@@ -12,5 +12,5 @@ fn main() {
         dp[i] = dp[i - 1] + dp[i - 2]
     }
 
-    println!("{}", dp[n])
+    println!("{}", dp[n]);
 }
