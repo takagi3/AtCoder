@@ -1,14 +1,12 @@
 use proconio::input;
 
-fn dfs(next: usize, graph: Vec<Vec<usize>>, mut visited: Vec<bool>) -> Vec<bool> {
+fn dfs(next: usize, graph: &Vec<Vec<usize>>, visited: &mut Vec<bool>) {
     graph[next].iter().for_each(|x| {
         if visited[*x] == false {
             visited[*x] = true;
-            visited = dfs(*x, graph.clone(), visited.clone())
+            dfs(*x, &graph, visited)
         }
     });
-
-    return visited;
 }
 
 fn main() {
@@ -26,7 +24,7 @@ fn main() {
 
     let mut v: Vec<bool> = vec![false; n + 1];
     v[1] = true;
-    v = dfs(1, g.clone(), v.clone());
+    dfs(1, &g, &mut v);
 
     let mut ans: &str = "The graph is connected.";
     for i in 1..=n {
