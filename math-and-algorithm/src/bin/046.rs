@@ -11,4 +11,8 @@ fn main() {
         gx: u32,
         map: [Chars; r],
     }
+
+    let ans: u64 = 0;
+
+    println!("{}", ans);
 }
