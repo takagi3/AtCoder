@@ -8,9 +8,9 @@ fn main() {
 
     let mut ans: &str;
     if a == 0 {
-        ans = "Silver";
+        ans = "Silver"
     } else if b == 0 {
-        ans = "Gold";
+        ans = "Gold"
     } else {
         ans = "Alloy"
     }
