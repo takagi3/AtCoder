@@ -1,3 +1,14 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        s: String,
+    }
+
+    let mut ans: &str = "WA";
+    if s == "Hello,World!" {
+        ans = "AC"
+    }
+
+    println!("{}", ans);
 }
