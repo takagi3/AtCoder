@@ -1,3 +1,11 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        x: f32,
+    }
+
+    let ans: f32 = x.round();
+
+    println!("{}", ans);
 }
