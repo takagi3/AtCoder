@@ -1,4 +1,4 @@
-use im_rc::HashMap;
+use std::collections::HashMap;
 use proconio::input;
 
 fn main() {
@@ -12,18 +12,14 @@ fn main() {
     let mut ans: &str = "Yes";
     let mut cnt: HashMap<usize, u32> = HashMap::new();
     for i in 0..n {
-        if cnt.get(&a[i]) == None {
-            cnt.insert(a[i], 1);
-        } else {
-            cnt[&a[i]] += 1
-        }
+        *cnt.entry(a[i]).or_default() += 1
     }
     for i in 0..m {
-        if cnt.get(&b[i]) == None || cnt[&b[i]] == 0 {
+        if cnt.get(&b[i]) == None || cnt.get(&b[i]) == Some(&0) {
             ans = "No";
             break;
         } else {
-            cnt[&b[i]] -= 1
+            *cnt.entry(b[i]).or_default() -= 1
         }
     }
 
