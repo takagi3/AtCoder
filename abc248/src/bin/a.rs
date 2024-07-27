@@ -4,7 +4,7 @@ use proconio::marker::Chars;
 
 fn main() {
     input! {
-        s: Chars
+        s: Chars,
     }
 
     let mut set: HashSet<i32> = HashSet::new();
