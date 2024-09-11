@@ -1,3 +1,10 @@
+use ac_library::ModInt998244353;
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        n: ModInt998244353,
+    }
+
+    println!("{}", n);
 }
