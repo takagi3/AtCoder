@@ -1,3 +1,10 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        a: [u32; n],
+    }
+
+    println!("{}", a.iter().sum::<u32>());
 }
