@@ -21,5 +21,5 @@ fn main() {
         .map(ToString::to_string)
         .collect::<Vec<_>>()
         .join(" ")
-    )
+    );
 }
