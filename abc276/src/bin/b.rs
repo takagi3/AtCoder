@@ -12,6 +12,7 @@ fn main() {
         ans[ab[i].0 - 1].push(ab[i].1);
         ans[ab[i].1 - 1].push(ab[i].0);
     }
+
     for i in 0..n {
         print!("{} ", ans[i].len());
         ans[i].sort();
