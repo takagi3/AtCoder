@@ -1,3 +1,10 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        s: String,
+        _t: String,
+    }
+
+    println!("{}", s + " san");
 }
