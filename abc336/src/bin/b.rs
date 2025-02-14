@@ -1,3 +1,15 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        mut n: usize,
+    }
+
+    let mut ans = 0;
+    while n % 2 == 0 {
+        ans += 1;
+        n /= 2;
+    }
+
+    println!("{}", ans);
 }
