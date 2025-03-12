@@ -1,3 +1,16 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    let mut ans = Vec::new();
+    loop {
+        input! { a: u32 }
+        ans.push(a);
+        if a == 0 {
+            break;
+        }
+    }
+
+    for a in ans.iter().rev() {
+        println!("{}", a);
+    }
 }
