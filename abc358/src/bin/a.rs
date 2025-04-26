@@ -1,3 +1,17 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        s: String,
+        t: String,
+    }
+
+    println!(
+        "{}",
+        if s == "AtCoder" && t == "Land" {
+            "Yes"
+        } else {
+            "No"
+        }
+    )
 }
