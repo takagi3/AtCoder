@@ -6,7 +6,7 @@ fn main() {
         b: u32,
     }
 
-    let mut ans: &str;
+    let ans: &str;
     if a == 0 {
         ans = "Silver"
     } else if b == 0 {
