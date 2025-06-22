@@ -1,3 +1,19 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        sab: char,
+        sac: char,
+        sbc: char,
+    }
+
+    let ans = if sab != sac {
+        "A"
+    } else if sab == sbc {
+        "B"
+    } else {
+        "C"
+    };
+
+    println!("{}", ans);
 }
