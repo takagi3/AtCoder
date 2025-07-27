@@ -1,3 +1,11 @@
+use proconio::{input, marker::Chars};
+
 fn main() {
-    todo!();
+    input! {
+        _n: usize,
+        d:  usize,
+        s:  Chars,
+    }
+
+    println!("{}", d + s.iter().filter(|&&c| c == '.').count());
 }
