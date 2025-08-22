@@ -1,3 +1,10 @@
+use proconio::input;
+use proconio::marker::Chars;
+
 fn main() {
-    todo!();
+    input! {
+        s: Chars,
+    }
+
+    println!("{}{}", s[0], "UPC");
 }
