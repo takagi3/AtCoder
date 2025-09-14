@@ -1,3 +1,9 @@
+use proconio::{input, marker::Chars};
+
 fn main() {
-    todo!();
+    input! {
+        s: Chars,
+    }
+
+    println!("{}", s.iter().filter(|&c| *c == '2').collect::<String>());
 }
