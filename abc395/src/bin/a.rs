@@ -1,3 +1,17 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        n: usize,
+        a: [u32; n],
+    }
+
+    println!(
+        "{}",
+        if a.windows(2).all(|w| w[0] < w[1]) {
+            "Yes"
+        } else {
+            "No"
+        }
+    );
 }
