@@ -1,3 +1,9 @@
+use proconio::input;
+
 fn main() {
-    todo!();
+    input! {
+        s: u32,
+    }
+
+    println!("{}", if s / 100 == 2 { "Success" } else { "Failure" });
 }
